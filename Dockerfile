@@ -25,3 +25,10 @@ RUN	mkdir /.vnc
 RUN	x11vnc -storepasswd 1234 ~/.vnc/passwd
 RUN apt-get purge -y software-properties-common
 RUN apt-get autoclean -y
+
+
+# Expose Port
+EXPOSE 5900
+
+CMD ["/usr/bin/wine /root/prefix32/drive_c/windows/system32/explorer.exe"]
+
