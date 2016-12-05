@@ -30,5 +30,5 @@ RUN apt-get autoclean -y
 # Expose Port
 EXPOSE 5900
 
-CMD ["/usr/bin/wine /root/prefix32/drive_c/windows/system32/explorer.exe"]
+CMD ["x11vnc -forever -usepw -create"]
 
