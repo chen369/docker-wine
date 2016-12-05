@@ -21,7 +21,7 @@ ENV WINEPREFIX /root/prefix32
 ENV WINEARCH win32
 ENV DISPLAY :0
 
-RUN	mkdir /.vnc
+RUN	mkdir ~/.vnc
 RUN	x11vnc -storepasswd 1234 ~/.vnc/passwd
 RUN apt-get purge -y software-properties-common
 RUN apt-get autoclean -y
