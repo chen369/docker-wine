@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Brandon R. Stoner <monokrome@monokro.me>
+MAINTAINER Chen Lee Chiu  <chen@blitzcorp.org>
 # Set correct environment variables
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
